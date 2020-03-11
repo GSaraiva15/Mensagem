@@ -2,6 +2,7 @@ package com.example.mensagem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enviaMensagem(View view) {
+        Intent intent = new Intent(this, MostraMensagemActivity.class);
+
         //todo: enviar mensagem
+
+        startActivity(intent);
     }
 }
